@@ -1,501 +1,627 @@
 <!DOCTYPE html>
-<html lang="el">
+<html lang="it" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>20Bet Casino: Πλήρης Κριτική και Μπόνους για Παίκτες στην Ελλάδα</title>
-    <meta name="description" content="Αναλυτική κριτική του 20Bet Casino για Έλληνες παίκτες. Μάθετε για το μπόνους €120, τα 4.000+ φρουτάκια, τις γρήγορες αναλήψεις και το αθλητικό στοίχημα.">
+    <title>Casino Non AAMS: Guida ai siti stranieri per giocatori italiani</title>
+    <meta name="description" content="Guida completa ai casino non AAMS per giocatori italiani: vantaggi, bonus, criptovalute e come scegliere i siti stranieri sicuri con licenze internazionali.">
     <link rel="canonical" href="https://mylandbikefestival.it/it.html" />
-    <link rel="alternate" hreflang="it-it" href="https://mylandbikefestival.it/it.html" />
+    <link rel="alternate" hreflang="it-IT" href="https://mylandbikefestival.it/it.html" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; background-color: #F8FAFC; color: #1E293B; }
-        .sticky-header { position: sticky; top: 0; z-index: 50; }
-        .table-container { overflow-x: auto; -webkit-overflow-scrolling: touch; }
-        .star-rating { color: #F59E0B; }
-        .btn-cta { background: linear-gradient(180deg, #2563EB 0%, #1D4ED8 100%); transition: all 0.2s; }
-        .btn-cta:hover { transform: translateY(-1px); box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); }
-        .casino-logo-placeholder { width: 120px; height: 48px; display: flex; align-items: center; justify-content: center; border-radius: 4px; font-weight: 700; font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.05em; }
-        .filter-checkbox:checked + label { color: #2563EB; font-weight: 600; }
+        body { font-family: 'Inter', sans-serif; }
+        .sticky-header { position: sticky; top: 0; z-index: 50; transition: all 0.3s; }
+        .glass-effect { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(8px); }
+        .table-row-hover:hover { background-color: #f8fafc; }
+        .btn-shadow { box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.2); }
         .accordion-content { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; }
-        .accordion-content.active { max-height: 800px; }
-        .rank-badge { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 700; }
-        .content-article h1 { font-size: 2.25rem; font-weight: 800; margin-bottom: 1.5rem; color: #0F172A; }
-        .content-article h2 { font-size: 1.75rem; font-weight: 700; margin-top: 2.5rem; margin-bottom: 1.25rem; color: #1E293B; border-left: 4px solid #2563EB; padding-left: 1rem; }
-        .content-article h3 { font-size: 1.25rem; font-weight: 700; margin-top: 2rem; margin-bottom: 1rem; color: #334155; }
-        .content-article p { margin-bottom: 1.25rem; line-height: 1.75; color: #475569; }
-        .content-article ul, .content-article ol { margin-bottom: 1.5rem; padding-left: 1.5rem; }
-        .content-article li { margin-bottom: 0.5rem; line-height: 1.6; }
-        .content-article strong { color: #0F172A; }
-        .custom-table { width: 100%; border-collapse: collapse; margin: 2rem 0; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
-        .custom-table th { background: #F1F5F9; padding: 12px; text-align: left; font-size: 0.875rem; font-weight: 700; border-bottom: 2px solid #E2E8F0; }
-        .custom-table td { padding: 12px; border-bottom: 1px solid #E2E8F0; font-size: 0.875rem; }
+        .accordion-content.active { max-height: 1000px; }
+        .prose h2 { font-size: 1.875rem; font-weight: 700; margin-top: 2.5rem; margin-bottom: 1.25rem; color: #0f172a; }
+        .prose h3 { font-size: 1.5rem; font-weight: 700; margin-top: 2rem; margin-bottom: 1rem; color: #1e293b; }
+        .prose p { margin-bottom: 1.25rem; color: #475569; line-height: 1.75; }
+        .prose strong { color: #1e293b; font-weight: 600; }
+        .content-table { width: 100%; border-collapse: collapse; margin: 2rem 0; font-size: 0.875rem; }
+        .content-table th { background: #f1f5f9; padding: 12px; text-align: left; border: 1px solid #e2e8f0; font-weight: 700; }
+        .content-table td { padding: 12px; border: 1px solid #e2e8f0; }
     </style>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Review",
-      "itemReviewed": {
-        "@type": "Organization",
-        "name": "20Bet Casino"
-      },
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "4.8",
-        "bestRating": "5"
-      },
+      "@type": "Article",
+      "headline": "Casino Non AAMS: Guida ai siti stranieri per giocatori italiani",
+      "description": "Negli ultimi anni, sempre più giocatori italiani si rivolgono ai casino non aams per vivere un'esperienza di gioco diversa rispetto ai siti regolamentati.",
       "author": {
         "@type": "Person",
-        "name": "Marcus Thorne"
+        "name": "Marco Thorne"
       },
       "publisher": {
         "@type": "Organization",
-        "name": "CasinoExpert"
+        "name": "CasinoExpert",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://mylandbikefestival.it/logo.png"
+        }
       }
     }
     </script>
 </head>
-<body class="antialiased">
+<body class="bg-slate-50 text-slate-900 leading-relaxed">
 
-    <!-- Affiliate Disclosure -->
-    <div class="bg-slate-100 border-b border-slate-200 py-2 px-4 text-center text-[10px] sm:text-xs text-slate-500">
-        ΓΝΩΣΤΟΠΟΙΗΣΗ ΔΙΑΦΗΜΙΖΟΜΕΝΟΥ: Λαμβάνουμε αποζημίωση από τις εταιρείες που εμφανίζονται σε αυτήν τη σελίδα. Αυτό μπορεί να επηρεάσει τη θέση και τη σειρά εμφάνισής τους.
+    <!-- AFFILIATE DISCLOSURE BAR -->
+    <div class="bg-slate-900 text-white text-[11px] py-1.5 px-4 text-center">
+        <span class="opacity-80">INFORMATIVA PUBBLICITARIA: Riceviamo compensi dalle società che appaiono su questa pagina. Ciò influisce sulla classifica e sul posizionamento dei marchi.</span>
     </div>
 
-    <!-- Header -->
-    <header class="bg-white border-b border-slate-200 sticky-header">
+    <!-- HEADER -->
+    <header class="sticky-header glass-effect border-b border-slate-200">
         <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
             <div class="flex items-center gap-2">
-                <div class="bg-blue-600 p-1.5 rounded-lg">
-                    <i data-lucide="shield-check" class="text-white w-6 h-6"></i>
+                <div class="w-8 h-8 bg-blue-600 rounded flex items-center justify-center">
+                    <i data-lucide="shield-check" class="text-white w-5 h-5"></i>
                 </div>
-                <span class="text-xl font-bold tracking-tight">CASINO<span class="text-blue-600">EXPERT</span></span>
+                <span class="font-bold text-xl tracking-tight uppercase">CASINO<span class="text-blue-600">EXPERT</span></span>
             </div>
             
             <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-600">
-                <a href="#" class="hover:text-blue-600">Online Καζίνο</a>
-                <a href="#" class="hover:text-blue-600">Καλύτερα Μπόνους</a>
-                <a href="#" class="hover:text-blue-600">Μέθοδοι Πληρωμής</a>
-                <a href="#" class="hover:text-blue-600">Οδηγοί</a>
+                <a href="#" class="hover:text-blue-600 transition">Casino Online</a>
+                <a href="#" class="hover:text-blue-600 transition">Migliori Bonus</a>
+                <a href="#" class="hover:text-blue-600 transition">Pagamenti</a>
+                <a href="#" class="hover:text-blue-600 transition">Guide</a>
             </nav>
 
             <div class="flex items-center gap-4">
-                <button class="md:hidden" id="mobileMenuBtn">
-                    <i data-lucide="menu" class="w-6 h-6"></i>
+                <button class="md:hidden p-2" id="mobileMenuBtn">
+                    <i data-lucide="menu"></i>
                 </button>
-                <div class="hidden md:flex items-center gap-2 text-xs text-slate-400 border-l pl-4">
-                    <i data-lucide="lock" class="w-3 h-3"></i>
-                    <span>SSL Secure</span>
+                <div class="hidden md:flex items-center gap-2 px-3 py-1 bg-slate-100 rounded-full text-xs font-bold text-slate-500">
+                    <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+                    AGGIORNATO: OTT 2024
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="bg-white border-b border-slate-200 py-8 md:py-12">
+    <!-- HERO SECTION -->
+    <section class="bg-white border-b border-slate-200 pt-12 pb-16">
         <div class="max-w-7xl mx-auto px-4">
-            <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
-                <div class="max-w-2xl">
-                    <div class="flex items-center gap-2 text-blue-600 font-semibold text-sm mb-3">
-                        <i data-lucide="award" class="w-4 h-4"></i>
-                        <span>Ενημερώθηκε: Νοέμβριος 2024</span>
-                    </div>
-                    <h1 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4 leading-tight">
-                        20Bet Casino: Πλήρης Κριτική και Μπόνους για Παίκτες στην Ελλάδα
-                    </h1>
-                    <p class="text-slate-600 text-lg leading-relaxed">
-                        Ανακαλύψτε γιατί το 20Bet είναι η κορυφαία επιλογή στην Ελλάδα για φρουτάκια, live καζίνο και αθλητικό στοίχημα. Δίκαιες πληρωμές και άμεση υποστήριξη.
-                    </p>
-                </div>
-                <div class="flex items-center gap-4 bg-slate-50 p-4 rounded-xl border border-slate-100">
-                    <div class="w-12 h-12 rounded-full bg-slate-300 flex-shrink-0 flex items-center justify-center text-slate-500 font-bold">MT</div>
-                    <div>
-                        <div class="text-sm font-bold text-slate-900">Marcus Thorne</div>
-                        <div class="text-xs text-slate-500">Senior Compliance Analyst</div>
-                        <div class="flex items-center gap-1 mt-1 text-[10px] text-green-600 font-bold uppercase">
-                            <i data-lucide="check-circle-2" class="w-3 h-3"></i>
-                            Expert Verified
+            <div class="max-w-4xl">
+                <nav class="flex items-center gap-2 text-xs text-slate-400 mb-4 uppercase font-bold tracking-wider">
+                    <a href="#">Home</a>
+                    <i data-lucide="chevron-right" class="w-3 h-3"></i>
+                    <span class="text-slate-600">Casino Non AAMS</span>
+                </nav>
+                <h1 class="text-4xl md:text-5xl font-bold text-slate-900 mb-6 tracking-tight">
+                    Casino Non AAMS: <span class="text-blue-600">Guida ai siti stranieri per giocatori italiani</span>
+                </h1>
+                <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+                    Negli ultimi anni, sempre più giocatori italiani si rivolgono ai <strong>casino non aams</strong> per vivere un'esperienza di gioco diversa rispetto ai siti regolamentati dall'Agenzia delle Dogane e dei Monopoli. Questi portali offrono bonus generosi e la possibilità di utilizzare criptovalute, operando legalmente con concessioni internazionali.
+                </p>
+                
+                <div class="flex flex-wrap items-center gap-6">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-slate-200 border-2 border-white overflow-hidden">
+                            <div class="w-full h-full bg-slate-400"></div>
                         </div>
+                        <div>
+                            <p class="text-xs font-bold">Revisionato da Marco Thorne</p>
+                            <p class="text-[11px] text-slate-500">Specialista iGaming & Analista</p>
+                        </div>
+                    </div>
+                    <div class="h-8 w-px bg-slate-200 hidden sm:block"></div>
+                    <div class="flex items-center gap-2 text-xs font-bold text-blue-700">
+                        <i data-lucide="check-circle-2" class="w-4 h-4 text-blue-600"></i>
+                        LICENZE MGA & CURACAO
+                    </div>
+                    <div class="flex items-center gap-2 text-xs font-bold text-blue-700">
+                        <i data-lucide="shield" class="w-4 h-4 text-blue-600"></i>
+                        SSL DATI SICURI
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Top 3 Quick Summary -->
-    <section class="max-w-7xl mx-auto px-4 py-8">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+    <!-- QUICK SUMMARY CARDS (TOP 3) -->
+    <section class="max-w-7xl mx-auto px-4 -mt-8 relative z-10">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             <!-- Card 1 -->
-            <div class="bg-white rounded-2xl border-2 border-blue-600 p-6 relative overflow-hidden shadow-sm">
-                <div class="absolute top-0 right-0 bg-blue-600 text-white px-4 py-1 text-[10px] font-bold rounded-bl-lg uppercase tracking-wider">Top Επιλογή</div>
-                <div class="mb-4 casino-logo-placeholder bg-slate-900 text-white">20BET</div>
-                <div class="flex items-center gap-1 mb-2">
-                    <i data-lucide="star" class="w-4 h-4 fill-current star-rating"></i>
-                    <i data-lucide="star" class="w-4 h-4 fill-current star-rating"></i>
-                    <i data-lucide="star" class="w-4 h-4 fill-current star-rating"></i>
-                    <i data-lucide="star" class="w-4 h-4 fill-current star-rating"></i>
-                    <i data-lucide="star" class="w-4 h-4 fill-current star-rating"></i>
-                    <span class="text-sm font-bold ml-1">4.9/5</span>
+            <div class="bg-white rounded-xl shadow-xl border-t-4 border-blue-600 p-6 flex flex-col items-center text-center">
+                <span class="bg-blue-600 text-white text-[10px] font-bold px-3 py-1 rounded-full mb-4 uppercase tracking-widest">Editor's Choice</span>
+                <div class="w-32 h-12 bg-slate-100 rounded border border-slate-200 mb-4 flex items-center justify-center font-bold text-slate-800">20BET</div>
+                <div class="flex gap-0.5 mb-2">
+                    <i data-lucide="star" class="w-4 h-4 fill-yellow-400 text-yellow-400"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-yellow-400 text-yellow-400"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-yellow-400 text-yellow-400"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-yellow-400 text-yellow-400"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-yellow-400 text-yellow-400"></i>
                 </div>
-                <div class="text-2xl font-bold text-slate-900 mb-1">100% έως €120</div>
-                <div class="text-xs text-slate-500 mb-6 uppercase font-semibold">+ 120 Δωρεάν Περιστροφές</div>
-                <a href="https://afflink.com?utm-source-test=20bet" class="block w-full py-3 rounded-lg text-center text-white font-bold btn-cta">Παίξε Τώρα</a>
+                <p class="text-2xl font-bold text-slate-900 mb-1">100% fino a €120</p>
+                <p class="text-xs text-slate-500 mb-6">+ 120 Giri Gratis</p>
+                <a href="https://afflink.com?utm-source-test=20bet" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-lg transition btn-shadow">VISITA ORA</a>
             </div>
             <!-- Card 2 -->
-            <div class="bg-white rounded-2xl border border-slate-200 p-6 shadow-sm">
-                <div class="mb-4 casino-logo-placeholder bg-emerald-600 text-white">STAKE.COM</div>
-                <div class="flex items-center gap-1 mb-2">
-                    <i data-lucide="star" class="w-4 h-4 fill-current star-rating"></i>
-                    <i data-lucide="star" class="w-4 h-4 fill-current star-rating"></i>
-                    <i data-lucide="star" class="w-4 h-4 fill-current star-rating"></i>
-                    <i data-lucide="star" class="w-4 h-4 fill-current star-rating"></i>
-                    <i data-lucide="star" class="w-4 h-4 fill-current text-slate-200"></i>
-                    <span class="text-sm font-bold ml-1">4.7/5</span>
+            <div class="bg-white rounded-xl shadow-lg border border-slate-200 p-6 flex flex-col items-center text-center">
+                <span class="bg-emerald-100 text-emerald-700 text-[10px] font-bold px-3 py-1 rounded-full mb-4 uppercase tracking-widest">Top Crypto</span>
+                <div class="w-32 h-12 bg-slate-100 rounded border border-slate-200 mb-4 flex items-center justify-center font-bold text-slate-800">STAKE.COM</div>
+                <div class="flex gap-0.5 mb-2">
+                    <i data-lucide="star" class="w-4 h-4 fill-yellow-400 text-yellow-400"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-yellow-400 text-yellow-400"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-yellow-400 text-yellow-400"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-yellow-400 text-yellow-400"></i>
+                    <i data-lucide="star" class="w-4 h-4 text-yellow-400"></i>
                 </div>
-                <div class="text-2xl font-bold text-slate-900 mb-1">Crypto Bonus</div>
-                <div class="text-xs text-slate-500 mb-6 uppercase font-semibold">Best for Crypto Players</div>
-                <a href="https://afflink.com?utm-source-test=20bet" class="block w-full py-3 rounded-lg text-center text-white font-bold btn-cta">Παίξε Τώρα</a>
+                <p class="text-2xl font-bold text-slate-900 mb-1">VIP Crypto Club</p>
+                <p class="text-xs text-slate-500 mb-6">Migliore per Bitcoin</p>
+                <a href="https://afflink.com?utm-source-test=20bet" class="w-full bg-slate-900 hover:bg-slate-800 text-white font-bold py-3 rounded-lg transition">VISITA ORA</a>
             </div>
             <!-- Card 3 -->
-            <div class="bg-white rounded-2xl border border-slate-200 p-6 shadow-sm">
-                <div class="mb-4 casino-logo-placeholder bg-indigo-600 text-white">PLAYAMO</div>
-                <div class="flex items-center gap-1 mb-2">
-                    <i data-lucide="star" class="w-4 h-4 fill-current star-rating"></i>
-                    <i data-lucide="star" class="w-4 h-4 fill-current star-rating"></i>
-                    <i data-lucide="star" class="w-4 h-4 fill-current star-rating"></i>
-                    <i data-lucide="star" class="w-4 h-4 fill-current star-rating"></i>
-                    <i data-lucide="star" class="w-4 h-4 fill-current text-slate-200"></i>
-                    <span class="text-sm font-bold ml-1">4.6/5</span>
+            <div class="bg-white rounded-xl shadow-lg border border-slate-200 p-6 flex flex-col items-center text-center">
+                <span class="bg-purple-100 text-purple-700 text-[10px] font-bold px-3 py-1 rounded-full mb-4 uppercase tracking-widest">Migliori Slot</span>
+                <div class="w-32 h-12 bg-slate-100 rounded border border-slate-200 mb-4 flex items-center justify-center font-bold text-slate-800">PLAYAMO</div>
+                <div class="flex gap-0.5 mb-2">
+                    <i data-lucide="star" class="w-4 h-4 fill-yellow-400 text-yellow-400"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-yellow-400 text-yellow-400"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-yellow-400 text-yellow-400"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-yellow-400 text-yellow-400"></i>
+                    <i data-lucide="star" class="w-4 h-4 text-yellow-400"></i>
                 </div>
-                <div class="text-2xl font-bold text-slate-900 mb-1">€300 + 150 Spins</div>
-                <div class="text-xs text-slate-500 mb-6 uppercase font-semibold">Fast Withdrawals</div>
-                <a href="https://afflink.com?utm-source-test=20bet" class="block w-full py-3 rounded-lg text-center text-white font-bold btn-cta">Παίξε Τώρα</a>
+                <p class="text-2xl font-bold text-slate-900 mb-1">€300 + 150 FS</p>
+                <p class="text-xs text-slate-500 mb-6">Oltre 3500 Giochi</p>
+                <a href="https://afflink.com?utm-source-test=20bet" class="w-full bg-slate-900 hover:bg-slate-800 text-white font-bold py-3 rounded-lg transition">VISITA ORA</a>
             </div>
         </div>
+    </section>
 
+    <!-- MAIN COMPARISON SECTION -->
+    <main class="max-w-7xl mx-auto px-4 py-16">
         <div class="flex flex-col lg:flex-row gap-8">
-            <!-- Sidebar Filters -->
+            
+            <!-- FILTER SIDEBAR -->
             <aside class="w-full lg:w-64 flex-shrink-0">
-                <div class="bg-white rounded-xl border border-slate-200 p-6 sticky top-24">
-                    <div class="flex items-center gap-2 font-bold text-slate-900 mb-6">
-                        <i data-lucide="sliders-horizontal" class="w-5 h-5"></i>
-                        Φίλτρα Αναζήτησης
-                    </div>
-
-                    <div class="mb-8">
-                        <h4 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-4">Τύπος Μπόνους</h4>
-                        <div class="space-y-3">
-                            <div class="flex items-center gap-3">
-                                <input type="checkbox" id="f-welcome" class="filter-checkbox w-4 h-4 rounded border-slate-300 text-blue-600" checked>
-                                <label for="f-welcome" class="text-sm text-slate-600 cursor-pointer">Welcome Bonus</label>
-                            </div>
-                            <div class="flex items-center gap-3">
-                                <input type="checkbox" id="f-nodeposit" class="filter-checkbox w-4 h-4 rounded border-slate-300 text-blue-600">
-                                <label for="f-nodeposit" class="text-sm text-slate-600 cursor-pointer">No Deposit</label>
-                            </div>
-                            <div class="flex items-center gap-3">
-                                <input type="checkbox" id="f-freespins" class="filter-checkbox w-4 h-4 rounded border-slate-300 text-blue-600">
-                                <label for="f-freespins" class="text-sm text-slate-600 cursor-pointer">Free Spins</label>
-                            </div>
+                <div class="sticky top-24 bg-white border border-slate-200 rounded-xl p-5">
+                    <h3 class="font-bold text-sm mb-4 flex items-center gap-2">
+                        <i data-lucide="sliders-horizontal" class="w-4 h-4"></i>
+                        FILTRA RISULTATI
+                    </h3>
+                    
+                    <div class="space-y-6">
+                        <div>
+                            <label class="text-[11px] font-bold text-slate-400 uppercase tracking-widest block mb-2">Ordina Per</label>
+                            <select id="sortSelect" class="w-full border border-slate-200 rounded-lg p-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                <option value="rank">Ranking Esperto</option>
+                                <option value="rating">Valutazione Utenti</option>
+                            </select>
                         </div>
-                    </div>
 
-                    <div class="mb-8">
-                        <h4 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-4">Πληρωμές</h4>
-                        <div class="space-y-3">
-                            <div class="flex items-center gap-3">
-                                <input type="checkbox" id="p-visa" class="filter-checkbox w-4 h-4 rounded border-slate-300 text-blue-600">
-                                <label for="p-visa" class="text-sm text-slate-600 cursor-pointer">Visa/Mastercard</label>
-                            </div>
-                            <div class="flex items-center gap-3">
-                                <input type="checkbox" id="p-paypal" class="filter-checkbox w-4 h-4 rounded border-slate-300 text-blue-600">
-                                <label for="p-paypal" class="text-sm text-slate-600 cursor-pointer">Crypto</label>
+                        <div>
+                            <label class="text-[11px] font-bold text-slate-400 uppercase tracking-widest block mb-2">Metodi di Pagamento</label>
+                            <div class="space-y-2">
+                                <label class="flex items-center gap-2 text-sm cursor-pointer hover:text-blue-600">
+                                    <input type="checkbox" checked class="rounded text-blue-600 focus:ring-blue-500"> Visa/Mastercard
+                                </label>
+                                <label class="flex items-center gap-2 text-sm cursor-pointer hover:text-blue-600">
+                                    <input type="checkbox" class="rounded text-blue-600 focus:ring-blue-500"> Criptovalute
+                                </label>
+                                <label class="flex items-center gap-2 text-sm cursor-pointer hover:text-blue-600">
+                                    <input type="checkbox" class="rounded text-blue-600 focus:ring-blue-500"> E-wallets
+                                </label>
                             </div>
                         </div>
                     </div>
                 </div>
             </aside>
 
-            <!-- Comparison Table -->
+            <!-- COMPARISON TABLE -->
             <div class="flex-grow">
-                <div class="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden">
-                    <div class="table-container">
+                <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm">
+                    <div class="overflow-x-auto">
                         <table class="w-full text-left border-collapse" id="casinoTable">
-                            <thead class="bg-slate-50 border-b border-slate-200 sticky top-0">
-                                <tr>
-                                    <th class="p-4 text-xs font-bold text-slate-500 uppercase tracking-wider">Rank</th>
-                                    <th class="p-4 text-xs font-bold text-slate-500 uppercase tracking-wider">Καζίνο</th>
-                                    <th class="p-4 text-xs font-bold text-slate-500 uppercase tracking-wider">Βαθμολογία</th>
-                                    <th class="p-4 text-xs font-bold text-slate-500 uppercase tracking-wider">Μπόνους</th>
-                                    <th class="p-4 text-xs font-bold text-slate-500 uppercase tracking-wider">Πλεονεκτήματα</th>
-                                    <th class="p-4 text-xs font-bold text-slate-500 uppercase tracking-wider text-right">Ενέργεια</th>
+                            <thead>
+                                <tr class="bg-slate-50 border-b border-slate-200 text-[11px] font-bold text-slate-500 uppercase tracking-widest">
+                                    <th class="px-6 py-4 w-16">Rank</th>
+                                    <th class="px-6 py-4">Casino</th>
+                                    <th class="px-6 py-4">Rating</th>
+                                    <th class="px-6 py-4">Bonus Benvenuto</th>
+                                    <th class="px-6 py-4">Pagamenti</th>
+                                    <th class="px-6 py-4 text-center">Azione</th>
                                 </tr>
                             </thead>
                             <tbody id="tableBody">
-                                <!-- Data injected by JS -->
+                                <!-- JS content -->
                             </tbody>
                         </table>
                     </div>
                 </div>
 
-                <!-- Main Article Content -->
-                <article class="mt-12 bg-white rounded-2xl border border-slate-200 p-6 md:p-10 content-article">
-                    <h2>20Bet Casino: Μια σύγχρονη εμπειρία παιχνιδιού</h2>
-                    <p>Το <strong>20bet casino</strong> αποτελεί μία από τις πιο δημοφιλείς επιλογές για Έλληνες παίκτες που αναζητούν μια ολοκληρωμένη εμπειρία τυχερών παιχνιδιών και αθλητικών στοιχημάτων σε μία πλατφόρμα. Ιδρύθηκε το 2020 και λειτουργεί υπό την άδεια της Κουρασάο από την TechSolutions Group N.V., προσφέροντας ένα ασφαλές καζίνο για χιλιάδες παίκτες παγκοσμίως. Η πλατφόρμα αυτή έχει κερδίσει την εμπιστοσύνη των χρηστών χάρη στην τεράστια βιβλιοθήκη παιχνιδιών, τις ανταγωνιστικές προσφορές και τη γρήγορη εξυπηρέτηση.</p>
-                    <p>Για τους Έλληνες παίκτες, το online καζίνο της 20Bet αντιπροσωπεύει μια αξιόπιστη λύση που δέχεται τοπικούς παίκτες χωρίς περιορισμούς. Η πλατφόρμα διαθέτει περισσότερα από 4.000 παιχνίδια καζίνο, ενώ παράλληλα προσφέρει εκτεταμένες επιλογές για αθλητικά στοιχήματα. Η εταιρεία έχει επενδύσει στην ασφάλεια των συναλλαγών με κρυπτογράφηση SSL και προσφέρει ποικίλες μεθόδους πληρωμής που είναι διαθέσιμες για τους Έλληνες χρήστες.</p>
-                    <p>Η διεπαφή του ιστότοπου είναι φιλική προς τον χρήστη, με καθαρή οργάνωση των κατηγοριών παιχνιδιών και εύκολη πλοήγηση. Το 20bet casino online προσφέρει υποστήριξη σε πολλαπλές γλώσσες και νομίσματα, συμπεριλαμβανομένου του ευρώ, κάτι που διευκολύνει τους Έλληνες παίκτες στις καταθέσεις και αναλήψεις τους.</p>
+                <!-- ARTICLE CONTENT INTEGRATION -->
+                <div class="mt-16 prose max-w-none prose-slate">
+                    <p>Si tratta di piattaforme di gioco online che non possiedono la licenza italiana ma operano legalmente grazie a concessioni rilasciate da autorità di regolamentazione internazionali riconosciute. La crescente popolarità tra i giocatori italiani deriva principalmente dalla ricerca di maggiore libertà di gioco, offerte promozionali più vantaggiose e metodi di pagamento alternativi.</p>
 
-                    <h2>20Bet Bonus και Προσφορές για νέα μέλη</h2>
-                    <p>Το μπόνους εγγραφής αποτελεί ένα από τα πιο ελκυστικά χαρακτηριστικά του 20Bet Casino. Η πλατφόρμα προσφέρει ξεχωριστά πακέτα καλωσορίσματος για το Casino και τα Sports, επιτρέποντας στους νέους παίκτες να επιλέξουν τη δική τους προτίμηση ή να επωφεληθούν και από τις δύο επιλογές.</p>
-                    <p>Το μπόνους καλωσορίσματος για το Casino περιλαμβάνει ένα ποσοστό 100% έως €120 στην πρώτη κατάθεση, συνοδευόμενο από 120 δωρεάν περιστροφές σε επιλεγμένα φρουτάκια. Η ελάχιστη κατάθεση για να ενεργοποιηθεί το μπόνους είναι €1, κάτι που το καθιστά προσβάσιμο για όλους τους παίκτες ανεξαρτήτως προϋπολογισμού. Οι δωρεάν περιστροφές κατανέμονται σε διάστημα τεσσάρων ημερών, με 30 spins ανά ημέρα.</p>
-                    <p>Οι προϋποθέσεις στοιχηματισμού (wagering requirements) για το μπόνους είναι x50 για το ποσό του μπόνους, ενώ για τις δωρεάν περιστροφές είναι x50 για τα κέρδη που προκύπτουν. Αυτές οι απαιτήσεις θεωρούνται μέτριες σε σύγκριση με άλλα online καζίνο. Είναι σημαντικό να ολοκληρώσετε τις απαιτήσεις εντός 7 ημερών από τη λήψη του μπόνους.</p>
-                    <p>Πέρα από το αρχικό πακέτο, το 20Bet διαθέτει τακτικές προσφορές για τα υπάρχοντα μέλη. Το Friday Reload Bonus προσφέρει ένα επιπλέον μπόνους κάθε Παρασκευή για όσους πραγματοποιούν κατάθεση, ενώ υπάρχουν και ειδικές προσφορές για συγκεκριμένα παιχνίδια και τουρνουά. Αυτές οι προωθητικές ενέργειες διασφαλίζουν ότι οι παίκτες έχουν συνεχή κίνητρα να επιστρέφουν στην πλατφόρμα.</p>
+                    <h2>Cosa sono i Casino Non AAMS e perché sono popolari?</h2>
+                    <p>I <strong>casino non aams</strong> sono piattaforme di gioco online che non detengono la licenza dell'Agenzia delle Dogane e dei Monopoli italiana, ma operano con regolari concessioni rilasciate da altre autorità internazionali. Queste includono enti regolatori come la Malta Gaming Authority, la licenza Curacao eGaming, o la UK Gambling Commission. Nonostante non siano regolamentati in Italia, questi siti accettano giocatori italiani e offrono i loro servizi nel rispetto delle normative dei paesi in cui sono licenziati.</p>
+                    <p>La domanda più frequente riguarda la legalità: giocare su questi siti è illegale? La risposta si colloca in una zona grigia. La legislazione italiana non vieta esplicitamente ai cittadini di registrarsi su <strong>casino stranieri che accettano italiani</strong>. Le restrizioni legali si applicano principalmente agli operatori che offrono servizi senza licenza, non ai singoli giocatori. Tuttavia, è fondamentale distinguere tra siti non regolamentati (potenzialmente truffaldini) e piattaforme con licenza internazionale seria.</p>
+                    <p>La popolarità di questi portali deriva da diversi fattori chiave. In primo luogo, offrono bonus di benvenuto significativamente più alti rispetto ai siti AAMS. Inoltre, permettono funzionalità di gioco come l'auto-play e la modalità veloce, spesso limitate sui portali italiani. Infine, la possibilità di utilizzare criptovalute per depositi e prelievi rappresenta un'opzione molto apprezzata da chi cerca maggiore privacy e transazioni più rapide.</p>
 
-                    <h3>Πρόγραμμα VIP και επιβράβευση αφοσίωσης</h3>
-                    <p>Το πρόγραμμα VIP του 20Bet είναι σχεδιασμένο για να επιβραβεύει τους τακτικούς παίκτες με αποκλειστικά προνόμια και ανταμοιβές. Κάθε φορά που τοποθετείτε στοιχήματα με πραγματικά χρήματα, κερδίζετε πόντοι επιβράβευσης γνωστούς ως Comp Points (CP). Οι πόντοι αυτοί συσσωρεύονται αυτόματα στον λογαριασμό σας και μπορούν να μετατραπούν σε μετρητά ή σε δωρεάν στοιχήματα.</p>
-                    <p>Το σύστημα λειτουργεί με απλό τρόπο: ανά κάθε €10 που ποντάρετε, λαμβάνετε συγκεκριμένο αριθμό πόντων, οι οποίοι εξαρτώνται από το επίπεδό σας στο πρόγραμμα. Όσο περισσότερο παίζετε, τόσο υψηλότερο επίπεδο ξεκλειδώνετε και τόσο καλύτερη είναι η ανταλλαγή πόντων σε χρήματα. Τα ανώτερα επίπεδα VIP προσφέρουν επιπλέον πλεονεκτήματα όπως ταχύτερες αναλήψεις, προσωπικό account manager και αποκλειστικά μπόνους γενεθλίων.</p>
+                    <h2>I vantaggi di giocare sui siti non AAMS</h2>
+                    <p>Scegliere i <strong>migliori casino non aams</strong> comporta numerosi vantaggi concreti che spiegano l'interesse crescente da parte dei giocatori italiani. Vediamo nel dettaglio i principali benefici.</p>
 
-                    <h2>Διαδικασία εγγραφής στο 20Bet Casino</h2>
-                    <p>Η εγγραφή στο 20bet είναι μια γρήγορη και απλή διαδικασία που ολοκληρώνεται σε λίγα λεπτά. Ακολουθήστε αυτά τα βήματα για τη δημιουργία λογαριασμού:</p>
-                    <ol>
-                        <li><strong>Επισκεφθείτε την επίσημη ιστοσελίδα:</strong> Πηγαίνετε στο 20Bet.com και κάντε κλικ στο πράσινο κουμπί "Εγγραφή" που βρίσκεται στην επάνω δεξιά γωνία της οθόνης.</li>
-                        <li><strong>Συμπληρώστε τα βασικά στοιχεία:</strong> Εισάγετε τη διεύθυνση email σας, δημιουργήστε έναν ισχυρό κωδικό πρόσβασης και επιλέξτε το προτιμώμενο νόμισμα (EUR).</li>
-                        <li><strong>Προσωπικά στοιχεία:</strong> Συμπληρώστε το όνομα, το επώνυμο και την ημερομηνία γέννησης.</li>
-                        <li><strong>Στοιχεία επικοινωνίας:</strong> Προσθέστε τον αριθμό τηλεφώνου και τη διεύθυνση κατοικίας σας.</li>
-                        <li><strong>Επιβεβαίωση:</strong> Ενεργοποιήστε τον λογαριασμό σας μέσω του email επιβεβαίωσης.</li>
-                    </ol>
+                    <h3>Bonus e promozioni più generosi</h3>
+                    <p>I <strong>bonus casino non aams</strong> rappresentano uno degli aspetti più attraenti. Mentre i siti italiani offrono tipicamente pacchetti di benvenuto contenuti (spesso limitati a poche centinaia di euro), le piattaforme straniere propongono promozioni che possono raggiungere diverse migliaia di euro. Non è raro trovare pacchetti di benvenuto distribuiti sui primi quattro o cinque depositi, con percentuali di match bonus che arrivano fino al 200% o 300%. Alcuni operatori offrono anche bonus senza deposito, permettendo di testare la piattaforma senza rischiare denaro proprio.</p>
 
-                    <h2>Παιχνίδια και Φρουτάκια στο 20Bet</h2>
-                    <p>Το 20Bet διαθέτει μια εντυπωσιακή συλλογή άνω των 4.000 παιχνιδιών καζίνο. Η βιβλιοθήκη περιλαμβάνει παιχνίδια από τους κορυφαίους παρόχους όπως NetEnt, Play'n GO, Pragmatic Play και Microgaming.</p>
-                    <ul>
-                        <li><strong>Book of Dead</strong> – Το κλασικό περιπετειώδες φρουτάκι</li>
-                        <li><strong>Starburst</strong> – Το εμβληματικό παιχνίδι της NetEnt</li>
-                        <li><strong>Sweet Bonanza</strong> – Υψηλή μεταβλητότητα και μεγάλα κέρδη</li>
-                        <li><strong>Gates of Olympus</strong> – Το hit της Pragmatic Play</li>
-                    </ul>
+                    <h3>Registrazione veloce e meno burocrazia</h3>
+                    <p>La registrazione veloce è un altro punto di forza. Molti casino con licenza internazionale permettono di iniziare a giocare immediatamente, richiedendo la verifica dell'identità solo al momento del primo prelievo. Questo approccio semplifica notevolmente l'accesso alla piattaforma, anche se è importante sottolineare che la verifica KYC (Know Your Customer) rimane comunque obbligatoria per ritirare le vincite, garantendo così standard di sicurezza adeguate.</p>
 
-                    <h3>Ζωντανό Καζίνο με πραγματικούς κρουπιέρηδες</h3>
-                    <p>Το τμήμα Live Casino προσφέρει αυθεντική εμπειρία χαρτοπαικτικής λέσχης με συνεργασίες όπως η Evolution Gaming. Οι παίκτες μπορούν να επιλέξουν από δεκάδες τραπέζια live ρουλέτας, μπλακτζάκ και baccarat, καθώς και game shows όπως το Crazy Time και το Monopoly Live.</p>
+                    <h3>Limiti di puntata e deposito più flessibili</h3>
+                    <p>I limiti di puntata sui siti non AAMS sono generalmente più alti rispetto a quelli imposti dalla regolamentazione italiana. Questo aspetto risulta particolarmente interessante per i giocatori high roller, che desiderano puntare somme consistenti. Anche i limiti di deposito sono più flessibili, permettendo maggiore libertà nella gestione del proprio budget di gioco senza le restrizioni stringenti previste dall'Agenzia delle Dogane e dei Monopoli.</p>
 
-                    <h2>Αθλητικό στοίχημα στην 20Bet</h2>
-                    <p>Το 20Bet καλύπτει πάνω από 30 διαφορετικά αθλήματα με χιλιάδες αγορές ημερησίως. Το ποδόσφαιρο κυριαρχεί, με κάλυψη Premier League, La Liga και Champions League. Η ενότητα ζωντανού στοιχήματος περιλαμβάνει live streaming και δυνατότητα Cash Out.</p>
+                    <h3>Crypto casino: Bitcoin e altre criptovalute</h3>
+                    <p>La possibilità di utilizzare criptovalute rappresenta una vera rivoluzione. Molti <strong>casino con licenza curacao</strong> e altre giurisdizioni internazionali accettano Bitcoin, Ethereum, Litecoin e stablecoin come USDT. Questo metodo di pagamento garantisce transazioni rapide, commissioni ridotte e un livello di privacy superiore rispetto ai metodi tradizionali. I siti AAMS, invece, non possono attualmente offrire questa opzione a causa delle restrizioni normative italiane.</p>
 
-                    <h2>20Bet App και εμπειρία σε κινητά</h2>
-                    <p>Η πλατφόρμα είναι πλήρως βελτιστοποιημένη για κινητά. Οι χρήστες Android μπορούν να κατεβάσουν το 20bet app απευθείας από τον ιστότοπο, ενώ οι χρήστες iOS μπορούν να χρησιμοποιήσουν την Progressive Web App έκδοση μέσω browser.</p>
+                    <h2>Sicurezza e Licenze: Come riconoscere un sito affidabile</h2>
+                    <p>La sicurezza è la preoccupazione principale quando si parla di <strong>casino non aams</strong>. È fondamentale comprendere che "non AAMS" non significa automaticamente "truffa" o "non sicuro". La chiave sta nel verificare la presenza di una licenza internazionale valida e riconosciuta.</p>
 
-                    <h2>Μέθοδοι κατάθεσης και ανάληψης</h2>
-                    <table class="custom-table">
+                    <h3>Licenza Curacao eGaming</h3>
+                    <p>La <strong>licenza Curacao</strong> è tra le più comuni nel settore dei casino online internazionali. Rilasciata dal governo di Curacao, questa concessione permette agli operatori di offrire servizi di gioco d'azzardo in molti paesi. Sebbene i requisiti siano meno stringenti rispetto ad altre giurisdizioni, i siti con questa licenza devono comunque rispettare standard di sicurezza base. È particolarmente diffusa tra i crypto casino per la sua flessibilità nelle transazioni in criptovalute.</p>
+
+                    <h3>Malta Gaming Authority (MGA)</h3>
+                    <p>La <strong>Malta Gaming Authority</strong> rappresenta uno degli enti regolatori più rispettati a livello europeo. I casino con licenza MGA devono soddisfare requisiti molto rigidi in termini di sicurezza, trasparenza finanziaria e protezione dei giocatori. Questa licenza è equiparabile, per standard di affidabilità, a quella italiana. Chi sceglie <strong>siti sicuri</strong> con licenza maltese può contare su un elevato livello di tutela e su meccanismi di risoluzione delle dispute in caso di problemi.</p>
+
+                    <h3>UK Gambling Commission (UKGC)</h3>
+                    <p>La licenza britannica è considerata tra le più severe al mondo. Gli operatori con concessione UKGC devono rispettare normative rigorosissime sul gioco responsabile, sulla prevenzione del riciclaggio di denaro e sulla tutela dei minori. Sebbene dopo la Brexit questi siti abbiano limitato l'accesso ai giocatori inglesi, molti mantengono la licenza come garanzia di qualità e affidabilità per i mercati internazionali.</p>
+
+                    <h3>Come verificare la licenza</h3>
+                    <p>Prima di registrarsi, è essenziale controllare la presenza della licenza nel footer del sito (solitamente in fondo alla homepage). Un operatore serio espone chiaramente il numero di licenza e il logo dell'autorità regolatrice. È possibile verificare l'autenticità di questa informazione visitando direttamente il sito dell'ente regolatore e cercando l'operatore nel registro pubblico. Evitate sempre <strong>siti scommesse non aams affidabili</strong> che non mostrano alcuna certificazione o che presentano informazioni vaghe sulla loro regolamentazione.</p>
+
+                    <h2>Tipologie di Bonus nei Casino Stranieri</h2>
+                    <p>L'offerta promozionale dei casino internazionali è estremamente variegata e rappresenta uno dei principali motivi per cui i giocatori italiani si orientano verso queste piattaforme. Conoscere le diverse tipologie di bonus disponibili aiuta a scegliere l'offerta più adatta alle proprie esigenze.</p>
+
+                    <h3>Bonus di benvenuto</h3>
+                    <p>Il bonus di benvenuto è la promozione principale offerta ai nuovi iscritti. A differenza dei siti AAMS, dove solitamente si limita al primo deposito, nei casino stranieri questo bonus può estendersi ai primi tre, quattro o addirittura cinque versamenti. L'importo totale può raggiungere cifre considerevoli, spesso accompagnate da centinaia di giri gratis sulle <strong>slot machine non aams</strong> più popolari. La struttura tipica prevede percentuali decrescenti: ad esempio, 200% sul primo deposito, 100% sul secondo, 50% sul terzo.</p>
+
+                    <h3>Bonus senza deposito</h3>
+                    <p>Il <strong>bonus senza deposito</strong> è particolarmente ricercato perché permette di giocare senza rischiare denaro proprio. Si tratta di un importo o di giri gratis accreditati semplicemente dopo la registrazione e la verifica dell'account. Questi bonus hanno generalmente requisiti di scommessa più alti e limiti di vincita massima, ma rappresentano un'ottima opportunità per testare la piattaforma senza impegno economico.</p>
+
+                    <h3>Cashback settimanale</h3>
+                    <p>Il <strong>cashback settimanale</strong> è una promozione molto comune sui siti internazionali. Consiste nella restituzione di una percentuale delle perdite subite durante un determinato periodo (solitamente una settimana). Questo tipo di bonus ha il vantaggio di avere requisiti di scommessa molto bassi o del tutto assenti, rendendo il denaro immediatamente prelevabile o utilizzabile per continuare a giocare.</p>
+
+                    <h3>Giri gratis (Free Spins)</h3>
+                    <p>I <strong>giri gratis</strong> vengono offerti sia come parte del pacchetto di benvenuto sia come promozioni ricorrenti per i giocatori fedeli. Le quantità possono essere molto generose: non è raro ricevere 100, 200 o anche 500 free spin distribuiti su più giorni. Attenzione però a verificare su quali slot sono utilizzabili e quale sia il valore per giro, che può variare significativamente da un'offerta all'altra.</p>
+
+                    <h3>Requisiti di scommessa: un aspetto cruciale</h3>
+                    <p>Ogni bonus comporta <strong>requisiti di scommessa</strong> (wagering requirements) che specificano quante volte l'importo del bonus deve essere giocato prima di poter prelevare le eventuali vincite. I casino stranieri tendono ad avere requisiti più alti rispetto ai siti italiani: non è insolito trovare wagering di 35x, 40x o anche 50x. È fondamentale leggere attentamente i termini e condizioni prima di accettare qualsiasi promozione, verificando anche eventuali limiti di puntata massima durante il gioco con bonus attivo e i giochi che contribuiscono al completamento dei requisiti.</p>
+
+                    <h2>Metodi di pagamento e prelievo</h2>
+                    <p>La gestione delle transazioni finanziarie è un aspetto centrale nell'esperienza di gioco online. I casino non AAMS offrono una gamma di metodi di pagamento diversificata, con alcune differenze significative rispetto ai portali italiani.</p>
+
+                    <h3>Carte di credito e debito</h3>
+                    <p>Le <strong>carte di credito</strong> Visa e Mastercard sono ampiamente accettate per i depositi. Alcune banche italiane, tuttavia, potrebbero bloccare transazioni verso operatori di gioco non regolamentati in Italia, quindi è consigliabile verificare preventivamente con il proprio istituto bancario. Le transazioni con carta sono generalmente istantanee per i depositi, mentre i tempi di prelievo possono variare da 3 a 5 giorni lavorativi.</p>
+
+                    <h3>Portafogli elettronici (E-wallet)</h3>
+                    <p>I <strong>portafogli elettronici</strong> come Skrill, Neteller e MuchBetter sono tra i metodi più popolari sui siti internazionali. Offrono transazioni rapide e un livello aggiuntivo di privacy, poiché non è necessario condividere direttamente i dati bancari con il casino. È importante notare che PayPal è raramente disponibile sui casino non AAMS, a causa delle politiche restrittive dell'azienda riguardo agli operatori senza licenza europea o americana.</p>
+
+                    <h3>Criptovalute</h3>
+                    <p>Bitcoin, Ethereum, Litecoin e stablecoin come USDT rappresentano l'opzione più innovativa. Le transazioni in criptovaluta sono pseudo-anonime, comportano commissioni minime e offrono tempi di elaborazione molto rapidi. I depositi sono generalmente istantanei una volta confermate le transazioni sulla blockchain, mentre i <strong>prelievi rapidi</strong> possono essere completati in poche ore. Questa velocità rappresenta un vantaggio significativo rispetto ai metodi tradizionali.</p>
+
+                    <h3>Bonifico bancario</h3>
+                    <p>Il <strong>bonifico bancario</strong> rimane disponibile, soprattutto per i prelievi di importi consistenti. È il metodo più lento, con tempi che possono raggiungere i 5-7 giorni lavorativi, ma è anche tra i più sicuri e non comporta limiti di importo particolarmente restrittivi. Alcuni casino potrebbero richiedere documentazione aggiuntiva per prelievi via bonifico superiori a determinate soglie.</p>
+
+                    <h3>Tempi di elaborazione dei prelievi</h3>
+                    <p>Un aspetto che distingue i casino internazionali riguarda i tempi di elaborazione. Mentre i siti AAMS hanno tempi standard dettati dalla normativa italiana, i portali stranieri possono variare notevolmente. I migliori operatori processano i prelievi in criptovaluta in poche ore, mentre quelli in valuta fiat richiedono solitamente 24-48 ore per l'approvazione, a cui si aggiungono i tempi tecnici del metodo di pagamento scelto.</p>
+
+                    <h2>Differenze principali: Casino AAMS vs Non AAMS</h2>
+                    <p>Comprendere le differenze tra le due tipologie di piattaforme è essenziale per effettuare una scelta consapevole. Ecco un confronto dettagliato tra <strong>stranieri che accettano italiani</strong> e siti con regolamentazione italiana.</p>
+
+                    <div class="overflow-x-auto">
+                        <table class="content-table">
                         <thead>
-                            <tr>
-                                <th>Μέθοδος</th>
-                                <th>Κατάθεση</th>
-                                <th>Ανάληψη</th>
-                                <th>Χρόνος Επεξεργασίας</th>
-                                <th>Όρια</th>
-                            </tr>
+                        <tr>
+                        <th>Caratteristica</th>
+                        <th>Casino AAMS/ADM</th>
+                        <th>Casino Non AAMS</th>
+                        </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>Visa/Mastercard</td>
-                                <td>Ναι</td>
-                                <td>Ναι</td>
-                                <td>Άμεση / 1-3 ημέρες</td>
-                                <td>€10 - €4,000</td>
-                            </tr>
-                            <tr>
-                                <td>Skrill/Neteller</td>
-                                <td>Ναι</td>
-                                <td>Ναι</td>
-                                <td>Άμεση / Έως 24 ώρες</td>
-                                <td>€10 - €10,000</td>
-                            </tr>
-                            <tr>
-                                <td>Bitcoin/Crypto</td>
-                                <td>Ναι</td>
-                                <td>Ναι</td>
-                                <td>Έως 15 λεπτά</td>
-                                <td>€20 - Χωρίς όριο</td>
-                            </tr>
-                            <tr>
-                                <td>Bank Transfer</td>
-                                <td>Ναι</td>
-                                <td>Ναι</td>
-                                <td>1-2 ημέρες / 3-5 ημέρες</td>
-                                <td>€50 - €5,000</td>
-                            </tr>
+                        <tr>
+                        <td><strong>Licenza</strong></td>
+                        <td>Agenzia delle Dogane e dei Monopoli</td>
+                        <td>Licenza internazionale (MGA, Curacao, UKGC)</td>
+                        </tr>
+                        <tr>
+                        <td><strong>Bonus di benvenuto</strong></td>
+                        <td>Limitati, solitamente 100-500€</td>
+                        <td>Generosi, spesso 1000€ o più distribuiti su più depositi</td>
+                        </tr>
+                        <tr>
+                        <td><strong>Limiti di deposito</strong></td>
+                        <td>Restrittivi, con soglie mensili</td>
+                        <td>Flessibili, adatti anche agli high roller</td>
+                        </tr>
+                        <tr>
+                        <td><strong>Metodi di pagamento</strong></td>
+                        <td>PayPal disponibile, no criptovalute</td>
+                        <td>Criptovalute accettate, PayPal raro</td>
+                        </tr>
+                        <tr>
+                        <td><strong>Autoesclusione</strong></td>
+                        <td>Sistema nazionale integrato</td>
+                        <td>Strumenti propri della piattaforma, autoresponsabilità</td>
+                        </tr>
+                        <tr>
+                        <td><strong>Verifica identità</strong></td>
+                        <td>Obbligatoria prima del primo deposito</td>
+                        <td>Richiesta generalmente al primo prelievo</td>
+                        </tr>
+                        <tr>
+                        <td><strong>Tassazione vincite</strong></td>
+                        <td>Prelievo fiscale già applicato</td>
+                        <td>Responsabilità del giocatore dichiarare le vincite</td>
+                        </tr>
+                        <tr>
+                        <td><strong>Varietà di giochi</strong></td>
+                        <td>Buona selezione, limitata a provider autorizzati</td>
+                        <td>Ampia scelta, inclusi provider non disponibili in Italia</td>
+                        </tr>
+                        <tr>
+                        <td><strong>Velocità prelievi</strong></td>
+                        <td>Standard, 3-5 giorni</td>
+                        <td>Variabile, da poche ore (crypto) a 5 giorni (fiat)</td>
+                        </tr>
                         </tbody>
-                    </table>
+                        </table>
+                    </div>
 
-                    <h2>Ασφάλεια και Εξυπηρέτηση Πελατών</h2>
-                    <p>Το 20Bet λειτουργεί με άδεια από την Κυβέρνηση του Κουρασάο (8048/JAZ). Χρησιμοποιεί κρυπτογράφηση SSL 128-bit για την προστασία των συναλλαγών. Η εξυπηρέτηση πελατών είναι διαθέσιμη 24/7 μέσω live chat και email (support@20bet.com).</p>
+                    <p>La scelta tra le due opzioni dipende dalle priorità individuali. Chi cerca massima protezione e preferisce affidarsi alla <strong>regolamentazione italiana</strong> troverà nei siti AAMS la soluzione più adatta. Chi invece privilegia bonus generosi, maggiore libertà di gioco e metodi di pagamento innovativi potrà orientarsi verso i casino con licenza internazionale.</p>
 
-                    <h2>Συμπέρασμα</h2>
-                    <p>Η <strong>20bet casino κριτική</strong> αποκαλύπτει μια ολοκληρωμένη πλατφόρμα που ανταποκρίνεται στις προσδοκίες των Ελλήνων παικτών. Με περισσότερα από 4.000 παιχνίδια, γρήγορες αναλήψεις μέσω κρυπτονομισμάτων και άψογη mobile εμπειρία, το 20Bet αξίζει σοβαρά την προσοχή σας.</p>
-                </article>
+                    <h2>Conclusioni</h2>
+                    <p>I <strong>casino non aams</strong> rappresentano un'alternativa interessante per i giocatori italiani che cercano maggiore libertà, bonus più generosi e metodi di pagamento innovativi come le criptovalute. L'esperienza di gioco su questi siti stranieri può essere sicura e gratificante, a condizione di effettuare una scelta consapevole dell'operatore. La chiave sta nel verificare sempre la presenza di una licenza internazionale riconosciuta – come quella di Malta, Curacao o del Regno Unito – che garantisce standard minimi di sicurezza e trasparenza.</p>
+                    <p>Tuttavia, è fondamentale approcciarsi a queste piattaforme con responsabilità e consapevolezza. La minore regolamentazione rispetto ai siti ADM richiede una maggiore autogestione del proprio comportamento di gioco. Gli strumenti di autoesclusione e i limiti di deposito potrebbero non essere così integrati come nei casino italiani, quindi spetta al singolo giocatore stabilire i propri limiti e rispettarli.</p>
+                    <p>Prima di registrarsi, dedicate tempo alla ricerca: leggete recensioni indipendenti, verificate l'autenticità della licenza, testate il servizio clienti e confrontate le offerte disponibili. Ricordate che bonus elevati spesso comportano requisiti di scommessa più stringenti, quindi valutate attentamente se l'offerta corrisponde effettivamente al vostro stile di gioco. Con la giusta attenzione alla scelta della piattaforma e un approccio responsabile, i casino internazionali possono offrire un'esperienza di gioco variegata e potenzialmente più vantaggiosa rispetto alle alternative nazionali.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- METHODOLOGY SECTION -->
+    <section class="bg-white border-y border-slate-200 py-16">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">La nostra metodologia di revisione</h2>
+            <p class="text-slate-600 mb-12">La trasparenza è il cuore del nostro marchio. Non ci limitiamo a elencare i casinò; li controlliamo in base a un controllo di integrità in 7 punti.</p>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="flex flex-col items-center">
+                    <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center mb-4">
+                        <i data-lucide="landmark"></i>
+                    </div>
+                    <h4 class="font-bold text-sm mb-1">Licenza</h4>
+                    <p class="text-xs text-slate-500">Stato MGA/Curacao Verificato</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center mb-4">
+                        <i data-lucide="wallet"></i>
+                    </div>
+                    <h4 class="font-bold text-sm mb-1">Velocità Prelievi</h4>
+                    <p class="text-xs text-slate-500">Tempi testati personalmente</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center mb-4">
+                        <i data-lucide="gift"></i>
+                    </div>
+                    <h4 class="font-bold text-sm mb-1">Termini Bonus</h4>
+                    <p class="text-xs text-slate-500">Requisiti di giocata equi</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center mb-4">
+                        <i data-lucide="headset"></i>
+                    </div>
+                    <h4 class="font-bold text-sm mb-1">Supporto</h4>
+                    <p class="text-xs text-slate-500">Reattività 24/7</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- FAQ Section -->
-    <section class="max-w-4xl mx-auto px-4 py-16">
-        <h2 class="text-3xl font-bold text-center mb-12">Συχνές Ερωτήσεις (FAQ)</h2>
+    <!-- FAQ SECTION -->
+    <section class="max-w-3xl mx-auto px-4 py-16">
+        <h2 class="text-2xl font-bold mb-8 text-center">Domande Frequenti (FAQ)</h2>
         <div class="space-y-4">
-            <div class="border border-slate-200 rounded-xl bg-white overflow-hidden">
-                <button class="w-full flex items-center justify-between p-5 text-left font-bold text-slate-900 accordion-trigger">
-                    Είναι ασφαλές το 20Bet Casino;
-                    <i data-lucide="plus" class="w-5 h-5 text-slate-400 transition-transform"></i>
+            <div class="border border-slate-200 rounded-lg bg-white overflow-hidden">
+                <button class="faq-toggle w-full px-6 py-4 text-left font-semibold flex justify-between items-center hover:bg-slate-50">
+                    È legale per i giocatori italiani utilizzare casino non AAMS?
+                    <i data-lucide="chevron-down" class="w-5 h-5 transition-transform"></i>
                 </button>
-                <div class="accordion-content px-5 pb-5 text-slate-600 text-sm leading-relaxed">
-                    Το 20Bet είναι ένα νόμιμο καζίνο που λειτουργεί με άδεια από την Κυβέρνηση του Κουρασάο. Χρησιμοποιεί SSL κρυπτογράφηση για την προστασία των δεδομένων και συνεργάζεται με πιστοποιημένους παρόχους παιχνιδιών.
+                <div class="accordion-content px-6 text-slate-600 text-sm">
+                    <div class="pb-4">
+                        La legge vieta agli operatori di offrire servizi senza licenza ADM in Italia, ma non prevede sanzioni specifiche per i singoli giocatori che si registrano su piattaforme straniere con licenza internazionale riconosciuta (MGA, Curacao). La responsabilità ricade sugli operatori.
+                    </div>
                 </div>
             </div>
-            <div class="border border-slate-200 rounded-xl bg-white overflow-hidden">
-                <button class="w-full flex items-center justify-between p-5 text-left font-bold text-slate-900 accordion-trigger">
-                    Πώς μπορώ να κάνω ανάληψη χρημάτων;
-                    <i data-lucide="plus" class="w-5 h-5 text-slate-400 transition-transform"></i>
+            <div class="border border-slate-200 rounded-lg bg-white overflow-hidden">
+                <button class="faq-toggle w-full px-6 py-4 text-left font-semibold flex justify-between items-center hover:bg-slate-50">
+                    Le vincite sui casino stranieri sono tassate in Italia?
+                    <i data-lucide="chevron-down" class="w-5 h-5 transition-transform"></i>
                 </button>
-                <div class="accordion-content px-5 pb-5 text-slate-600 text-sm leading-relaxed">
-                    Συνδεθείτε, πηγαίνετε στην ενότητα "Ανάληψη", επιλέξτε τη μέθοδο και το ποσό. Τα e-wallets και κρυπτονομίσματα ολοκληρώνονται εντός 24 ωρών.
+                <div class="accordion-content px-6 text-slate-600 text-sm">
+                    <div class="pb-4">
+                        Sui siti AAMS la tassa è applicata alla fonte. Sui siti non AAMS, è responsabilità del giocatore dichiarare le vincite nella dichiarazione dei redditi. Si consiglia di consultare un commercialista per vincite consistenti.
+                    </div>
                 </div>
             </div>
-            <div class="border border-slate-200 rounded-xl bg-white overflow-hidden">
-                <button class="w-full flex items-center justify-between p-5 text-left font-bold text-slate-900 accordion-trigger">
-                    Υπάρχει μπόνους χωρίς κατάθεση;
-                    <i data-lucide="plus" class="w-5 h-5 text-slate-400 transition-transform"></i>
+            <div class="border border-slate-200 rounded-lg bg-white overflow-hidden">
+                <button class="faq-toggle w-full px-6 py-4 text-left font-semibold flex justify-between items-center hover:bg-slate-50">
+                    I casino non AAMS sono sicuri?
+                    <i data-lucide="chevron-down" class="w-5 h-5 transition-transform"></i>
                 </button>
-                <div class="accordion-content px-5 pb-5 text-slate-600 text-sm leading-relaxed">
-                    Το 20Bet δεν προσφέρει τη συγκεκριμένη στιγμή μπόνους χωρίς κατάθεση, αλλά το μπόνους καλωσορίσματος απαιτεί ελάχιστη κατάθεση μόνο €1.
+                <div class="accordion-content px-6 text-slate-600 text-sm">
+                    <div class="pb-4">
+                        La sicurezza dipende dalla licenza. Siti con licenza MGA o UKGC offrono standard elevatissimi. Verificate sempre l'autenticità della licenza nel footer del sito prima di registrarvi.
+                    </div>
                 </div>
             </div>
-            <div class="border border-slate-200 rounded-xl bg-white overflow-hidden">
-                <button class="w-full flex items-center justify-between p-5 text-left font-bold text-slate-900 accordion-trigger">
-                    Μπορώ να παίξω από κινητό τηλέφωνο;
-                    <i data-lucide="plus" class="w-5 h-5 text-slate-400 transition-transform"></i>
+            <div class="border border-slate-200 rounded-lg bg-white overflow-hidden">
+                <button class="faq-toggle w-full px-6 py-4 text-left font-semibold flex justify-between items-center hover:bg-slate-50">
+                    Posso giocare da dispositivi mobili?
+                    <i data-lucide="chevron-down" class="w-5 h-5 transition-transform"></i>
                 </button>
-                <div class="accordion-content px-5 pb-5 text-slate-600 text-sm leading-relaxed">
-                    Ναι, το 20Bet είναι πλήρως βελτιστοποιημένο. Μπορείτε να χρησιμοποιήσετε το mobile site ή να κατεβάσετε την εφαρμογή για Android.
+                <div class="accordion-content px-6 text-slate-600 text-sm">
+                    <div class="pb-4">
+                        Sì, la maggior parte dei casino internazionali è ottimizzata per browser mobile o offre app dedicate, garantendo l'accesso a tutti i giochi e metodi di pagamento.
+                    </div>
+                </div>
+            </div>
+            <div class="border border-slate-200 rounded-lg bg-white overflow-hidden">
+                <button class="faq-toggle w-full px-6 py-4 text-left font-semibold flex justify-between items-center hover:bg-slate-50">
+                    Che tipo di assistenza clienti offrono?
+                    <i data-lucide="chevron-down" class="w-5 h-5 transition-transform"></i>
+                </button>
+                <div class="accordion-content px-6 text-slate-600 text-sm">
+                    <div class="pb-4">
+                        Offrono solitamente chat live 24/7, email e supporto telefonico. La presenza di operatori madrelingua italiani varia da sito a sito.
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-white border-t border-slate-200 pt-16 pb-8">
+    <!-- FOOTER -->
+    <footer class="bg-slate-900 text-slate-400 py-16">
         <div class="max-w-7xl mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
                 <div class="col-span-1 md:col-span-2">
-                    <div class="flex items-center gap-2 mb-6">
-                        <div class="bg-blue-600 p-1 rounded">
-                            <i data-lucide="shield-check" class="text-white w-5 h-5"></i>
-                        </div>
-                        <span class="text-lg font-bold">CASINO<span class="text-blue-600">EXPERT</span></span>
+                    <div class="flex items-center gap-2 text-white mb-6">
+                        <i data-lucide="shield-check" class="text-blue-500 w-6 h-6"></i>
+                        <span class="font-bold text-xl tracking-tight uppercase">CasinoExpert</span>
                     </div>
-                    <p class="text-sm text-slate-500 mb-6 leading-relaxed">
-                        Το CasinoExpert είναι ένας ανεξάρτητος ιστότοπος κριτικών που παρέχει διαφανείς πληροφορίες για τη βιομηχανία των online καζίνο.
+                    <p class="text-sm leading-relaxed mb-6">
+                        CasinoExpert è una guida indipendente dedicata a fornire approfondimenti trasparenti sull'industria del gioco d'azzardo online. Aiutiamo i giocatori a prendere decisioni informate attraverso test rigorosi e analisi di esperti.
                     </p>
-                    <div class="flex items-center gap-4">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/18plus.svg/600px-18plus.svg.png" alt="18+" class="h-8 opacity-50 grayscale">
-                        <span class="text-xs font-bold text-slate-400">BeGambleAware.org</span>
-                        <div class="h-6 w-px bg-slate-200"></div>
-                        <i data-lucide="lock" class="w-4 h-4 text-slate-400"></i>
-                        <span class="text-xs font-bold text-slate-400">SSL ENCRYPTED</span>
+                    <div class="flex gap-4 grayscale opacity-50">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/37/BeGambleAware_Logo.svg/1200px-BeGambleAware_Logo.svg.png" alt="BeGambleAware" class="h-6">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/18_plus.svg" alt="18+" class="h-6">
                     </div>
                 </div>
                 <div>
-                    <h4 class="font-bold mb-6">Σύνδεσμοι</h4>
-                    <ul class="space-y-4 text-sm text-slate-600">
-                        <li><a href="#" class="hover:text-blue-600">Σχετικά με εμάς</a></li>
-                        <li><a href="#" class="hover:text-blue-600">Μεθοδολογία</a></li>
-                        <li><a href="#" class="hover:text-blue-600">Επικοινωνία</a></li>
+                    <h4 class="text-white font-bold mb-6 uppercase text-xs tracking-widest">Link Rapidi</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li><a href="#" class="hover:text-white transition">Chi Siamo</a></li>
+                        <li><a href="#" class="hover:text-white transition">Processo di Revisione</a></li>
+                        <li><a href="#" class="hover:text-white transition">Gioco Responsabile</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="font-bold mb-6">Νομικά</h4>
-                    <ul class="space-y-4 text-sm text-slate-600">
-                        <li><a href="#" class="hover:text-blue-600">Όροι Χρήσης</a></li>
-                        <li><a href="#" class="hover:text-blue-600">Πολιτική Απορρήτου</a></li>
-                        <li><a href="#" class="hover:text-blue-600">Υπεύθυνο Παιχνίδι</a></li>
+                    <h4 class="text-white font-bold mb-6 uppercase text-xs tracking-widest">Legale</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li><a href="#" class="hover:text-white transition">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-white transition">Cookie Policy</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="border-t border-slate-100 pt-8 text-center">
-                <p class="text-[10px] text-slate-400 uppercase tracking-widest">
-                    &copy; 2024 CASINO EXPERT GROUP. ALL RIGHTS RESERVED. PLAY RESPONSIBLY.
-                </p>
+            
+            <div class="pt-8 border-t border-slate-800 text-[11px] flex flex-col md:flex-row justify-between items-center gap-4">
+                <p>© 2024 CASINOEXPERT. TUTTI I DIRITTI RISERVATI. IL GIOCO PUÒ CAUSARE DIPENDENZA. GIOCA RESPONSABILMENTE.</p>
+                <div class="flex items-center gap-4">
+                    <span class="flex items-center gap-1"><i data-lucide="lock" class="w-3 h-3"></i> SSL SECURE</span>
+                    <span class="flex items-center gap-1"><i data-lucide="globe" class="w-3 h-3"></i> ITALIANO (IT)</span>
+                </div>
             </div>
         </div>
     </footer>
 
     <script>
-        const casinoData = [
-            { rank: 1, name: "20BET", rating: 4.9, bonus: "100% έως €120 + 120 Spins", payments: ["visa", "skrill", "btc"], highlights: ["4000+ Παιχνίδια", "€1 Ελάχιστη Κατάθεση"], color: "bg-slate-900", link: "https://afflink.com?utm-source-test=20bet" },
-            { rank: 2, name: "Stake.com", rating: 4.7, bonus: "VIP Rakeback", payments: ["btc", "eth", "ltc"], highlights: ["Crypto Specialist", "Instant Payouts"], color: "bg-emerald-600", link: "https://afflink.com?utm-source-test=20bet" },
-            { rank: 3, name: "Playamo", rating: 4.6, bonus: "€300 + 150 Spins", payments: ["visa", "mastercard", "neteller"], highlights: ["Quick Verification", "Great UI"], color: "bg-indigo-600", link: "https://afflink.com?utm-source-test=20bet" }
+        // DATA
+        const casinos = [
+            { rank: 1, name: "20BET", rating: 5.0, bonus: "100% fino a €120", payments: ["visa", "crypto", "mastercard"], highlights: ["Top Odds", "Prelievi Rapidi"], link: "https://afflink.com?utm-source-test=20bet" },
+            { rank: 2, name: "STAKE.COM", rating: 4.9, bonus: "VIP Rewards & Rakeback", payments: ["bitcoin", "ethereum", "usdt"], highlights: ["Miglior Crypto", "Licenza Curacao"], link: "https://afflink.com?utm-source-test=20bet" },
+            { rank: 3, name: "PLAYAMO", rating: 4.8, bonus: "€300 + 150 Giri Gratis", payments: ["visa", "skrill", "crypto"], highlights: ["3500+ Giochi", "App Mobile"], link: "https://afflink.com?utm-source-test=20bet" },
+            { rank: 4, name: "BİZBETS", rating: 4.7, bonus: "100% fino a €500", payments: ["visa", "crypto"], highlights: ["Nuovo Sito", "Bonus Cashback"], link: "https://afflink.com?utm-source-test=20bet" },
+            { rank: 5, name: "NATIONAL", rating: 4.6, bonus: "€100 + 100 FS", payments: ["mastercard", "neteller"], highlights: ["Grafica Top", "Programma VIP"], link: "https://afflink.com?utm-source-test=20bet" }
         ];
 
+        // RENDER TABLE
         function renderTable(data) {
             const tbody = document.getElementById('tableBody');
             tbody.innerHTML = data.map(casino => `
-                <tr class="hover:bg-slate-50 transition-colors border-b border-slate-100 last:border-0">
-                    <td class="p-4">
-                        <div class="rank-badge ${casino.rank === 1 ? 'bg-blue-600 text-white' : 'bg-slate-100 text-slate-500'}">
-                            ${casino.rank}
-                        </div>
-                    </td>
-                    <td class="p-4">
-                        <div class="flex items-center gap-3">
-                            <div class="casino-logo-placeholder ${casino.color} text-white text-[10px] w-24 h-10 flex-shrink-0">
+                <tr class="table-row-hover border-b border-slate-100 transition">
+                    <td class="px-6 py-8 font-bold text-slate-400 text-xl">#${casino.rank}</td>
+                    <td class="px-6 py-8">
+                        <div class="flex flex-col gap-2">
+                            <div class="w-32 h-10 bg-slate-100 rounded border border-slate-200 flex items-center justify-center font-bold text-[10px] text-slate-800 uppercase tracking-tight">
                                 ${casino.name}
                             </div>
+                            <div class="flex flex-wrap gap-1">
+                                ${casino.highlights.map(h => `<span class="text-[9px] bg-slate-100 text-slate-600 px-1.5 py-0.5 rounded font-bold uppercase">${h}</span>`).join('')}
+                            </div>
                         </div>
                     </td>
-                    <td class="p-4">
+                    <td class="px-6 py-8">
                         <div class="flex flex-col">
-                            <div class="flex items-center gap-0.5 mb-1">
+                            <span class="text-lg font-bold text-slate-900">${casino.rating.toFixed(1)}/5.0</span>
+                            <div class="flex gap-0.5">
                                 ${Array(5).fill(0).map((_, i) => `
-                                    <i data-lucide="star" class="w-3 h-3 fill-current ${i < Math.floor(casino.rating) ? 'star-rating' : 'text-slate-200'}"></i>
+                                    <i data-lucide="star" class="w-3 h-3 ${i < Math.floor(casino.rating) ? 'fill-yellow-400 text-yellow-400' : 'text-slate-200'}"></i>
                                 `).join('')}
                             </div>
-                            <span class="text-xs font-bold text-slate-900">${casino.rating}/5</span>
                         </div>
                     </td>
-                    <td class="p-4">
-                        <div class="text-sm font-bold text-slate-900">${casino.bonus}</div>
-                        <div class="text-[10px] text-slate-400 font-semibold uppercase tracking-tighter">Ισχύουν Όροι</div>
-                    </td>
-                    <td class="p-4">
-                        <div class="flex flex-wrap gap-1">
-                            ${casino.highlights.map(h => `<span class="text-[10px] px-2 py-0.5 bg-green-50 text-green-700 rounded-full font-semibold border border-green-100">${h}</span>`).join('')}
+                    <td class="px-6 py-8">
+                        <div class="flex flex-col">
+                            <span class="font-bold text-blue-600 text-sm">${casino.bonus}</span>
+                            <span class="text-[10px] text-slate-400 font-medium underline cursor-help">T&C Applicati</span>
                         </div>
                     </td>
-                    <td class="p-4 text-right">
-                        <a href="${casino.link}" class="inline-block px-6 py-2 rounded-lg text-white font-bold text-sm btn-cta whitespace-nowrap">
-                            Επίσκεψη
+                    <td class="px-6 py-8">
+                        <div class="flex gap-2 opacity-60">
+                            <i data-lucide="credit-card" class="w-5 h-5"></i>
+                            <i data-lucide="bitcoin" class="w-5 h-5"></i>
+                        </div>
+                    </td>
+                    <td class="px-6 py-8 text-center">
+                        <a href="${casino.link}" class="inline-block bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold px-6 py-3 rounded-lg transition btn-shadow uppercase">
+                            GIOCA ORA
                         </a>
+                        <p class="text-[9px] text-slate-400 mt-2 font-bold uppercase tracking-tighter">Link Sicuro</p>
                     </td>
                 </tr>
             `).join('');
             lucide.createIcons();
         }
 
-        // Accordion Logic
-        document.querySelectorAll('.accordion-trigger').forEach(trigger => {
-            trigger.addEventListener('click', () => {
-                const content = trigger.nextElementSibling;
-                const icon = trigger.querySelector('i');
+        // SORTING
+        document.getElementById('sortSelect').addEventListener('change', (e) => {
+            const val = e.target.value;
+            let sorted;
+            if (val === 'rank') sorted = [...casinos].sort((a, b) => a.rank - b.rank);
+            if (val === 'rating') sorted = [...casinos].sort((a, b) => b.rating - a.rating);
+            renderTable(sorted);
+        });
+
+        // FAQ ACCORDION
+        document.querySelectorAll('.faq-toggle').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('i');
                 
                 content.classList.toggle('active');
-                icon.style.transform = content.classList.contains('active') ? 'rotate(45deg)' : 'rotate(0)';
+                icon.style.transform = content.classList.contains('active') ? 'rotate(180deg)' : 'rotate(0deg)';
             });
         });
 
-        // Initialize
-        window.onload = () => {
-            renderTable(casinoData);
-            lucide.createIcons();
-        };
+        // INITIALIZE
+        renderTable(casinos);
+        lucide.createIcons();
+
+        // STICKY HEADER
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('.sticky-header');
+            if (window.scrollY > 50) {
+                header.classList.add('shadow-md');
+            } else {
+                header.classList.remove('shadow-md');
+            }
+        });
     </script>
 </body>
 </html>
